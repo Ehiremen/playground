@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 0, 255, 0.63);
+}
+
+h1 {
+	font: small-caps bold 44px/1 sans-serif;
+	margin: 2rem 0 0 0;
+	padding: 0;
+}
+
+h2 {
+	font: small-caps bold 36px/1 sans-serif;
+	margin: 0 1rem;
+	padding: 0;
+	text-align: center;
+}
+
+.board {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: lightblue;
+	width: 60vw;
+	height: 60vw;
+	max-width: 40rem;
+	max-height: 40rem;
+	flex-wrap: wrap;
+	outline-style: dashed;
+	margin: 2rem;
+}
+
+.cell {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 33%;
+	width: 33%;
+	color: yellow;
+	background-color: tomato;
+	outline-style: solid;
+	font: small-caps bold 50px/1 sans-serif;
+	cursor: pointer;
+}
+
+.disabled {
+	opacity: 0.9;
+	cursor: not-allowed;
+}
+
+p {
+	margin: 1rem;
+	font: small-caps bold 24px/1 sans-serif;
+}
+
+#button {
+	background-color: red;
+	border: none;
+	border-radius: 1rem;
+	color: white;
+	padding: 1rem 2rem;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 24px;
+	opacity: 0.6;
+	transition-duration: 1s;
+}
+
+#button:hover {
+	cursor: pointer;
+	opacity: 1;
+	background-color: #4caf50; /* Green */
+}
