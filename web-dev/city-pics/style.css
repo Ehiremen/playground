@@ -1,0 +1,77 @@
+body {
+  background-color: #F5F6FA;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+/* Note, this is position: relative so that we can put the image inside of it */
+.projector {
+  margin: 50px auto;
+  width: 900px; 
+  position: relative;
+  margin-bottom: 0;
+}
+
+
+.city-view {
+  background-color: white;
+  top: 5px;
+  bottom: 77px;
+  right: 36px;
+  left: 35px;
+  overflow-x: hidden; /* if the image is the wrong aspect ratio, this cuts it off */
+  overflow-y: hidden; /* janky, yeah but youd probably work with a designer to get this right IRL */
+  position: absolute;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  transition: 200ms ease-in-out; /* Makes the transition nice and smooth */
+}
+
+.picker {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  width: 900px;
+  height: 300px;
+}
+
+p {
+  margin: 1rem;
+  font: small-caps bold 24px/1 sans-serif;
+}
+
+#random-city {
+  background-color: #ff00ff;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#random-city:hover {
+  cursor:pointer;
+}
+
+#footer {
+  margin: 0;
+  padding: 0 1rem;
+  width: 100vw;
+  height: 2rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

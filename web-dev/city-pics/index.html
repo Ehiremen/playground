@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>City Pics</title>
+    <link
+      href="https://unpkg.com/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <h1>Where to view today...</h1>
+
+      <section class="projector">
+        <img
+          class="tv-frame"
+          src="https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/tv-container.png"
+        />
+        <div class="city-view" id="screen">
+          <img />
+        </div>
+      </section>
+
+      <section>
+        <div class="picker">
+          <div id="city-picker"></div>
+        </div>
+        <p><span>Currently viewing: </span><span class="label"></span></p>
+      </section>
+
+      <div id="random-city">
+        <h3>RANDOM CITY!</h3>
+      </div>
+      <div id="footer">
+        <span>
+          Wheel-like city picker sourced from wheelnav-js @
+          http://wheelnavjs.softwaretailoring.net/index.html
+        </span>
+      </div>
+    </main>
+
+    <script src="wheelnav-js/raphael.min.js"></script>
+    <script src="wheelnav-js/raphael.icons.min.js"></script>
+    <script type="text/javascript" src="wheelnav-js/wheelnav.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
